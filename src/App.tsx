@@ -1,26 +1,65 @@
-import React from 'react';
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import {BrowserRouter as Router} from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface AppProps {}
+interface AppState {
+  sessionToken: string | null,
+  unhashedPw: null | string,
 }
+ 
+class App extends React.Component<AppProps, AppState> {
+  constructor(props: AppProps) {
+    super(props);
+    this.state = {  
+      sessionToken: "",
+      unhashedPw: ""
+    };
+  }
+  
+  componentDidMount() {
+    if (localStorage.getItem("token")){
+      this.setState({
+        sessionToken: localStorage.getItem("token"),
+        unhashedPw: localStorage.getItem("unhashedPw")
+      });
+    };
+  };
+  
+  updateToken = (newToken: string) => {
+    localStorage.setItem("token", newToken);
+    this.setState({
+      sessionToken: newToken
+    });
+    console.log(this.state.sessionToken)
+  }
 
+  
+  updatePw = (newPw: string) => {
+    localStorage.setItem("unhashedPw", newPw);
+    this.setState({
+      unhashedPw: newPw
+    })
+  }
+
+  clearToken = () => {
+    localStorage.clear();
+    this.setState({
+      sessionToken: "",
+      unhashedPw: ""
+    })
+  }
+  
+  render() { 
+    return (  
+      <div className="App">
+      <Router>
+        <Navbar updateToken={this.updateToken} clearToken={this.clearToken} sessionToken={this.state.sessionToken} updatePw={this.updatePw} unhashedPw={this.state.unhashedPw} />
+      </Router>
+    </div>
+    );
+  }
+}
+ 
 export default App;
