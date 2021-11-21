@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -9,7 +9,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 .my-blog-card {
@@ -18,7 +18,7 @@ code {
   max-width: 450px;
   overflow: hidden;
   border-radius: 15px;
-  box-shadow: 2px 3px 4px rgba(0,0,0,0.5);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
   padding: 0px;
 }
 .my-blog-modal {
@@ -43,9 +43,9 @@ code {
   max-width: 400px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 2px 3px 4px rgba(0,0,0,0.5)
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
 }
-.blog-title{
+.blog-title {
   font-size: 20px;
   padding: 10px;
   text-align: center;
@@ -60,7 +60,7 @@ code {
 .single-blog-image {
   max-height: 405px;
   max-width: 600px;
-  box-shadow: 2px 3px 4px rgba(0,0,0,0.5);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
 }
 
 .single-blog-card {
@@ -69,7 +69,7 @@ code {
   flex-direction: row;
   padding: 25px;
   max-width: 90%;
-  box-shadow: 2px 3px 4px rgba(0,0,0,0.5);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
 }
 
@@ -93,9 +93,9 @@ code {
 }
 
 .comment-header {
-  color: rgba(240,240,240);
+  color: rgba(240, 240, 240);
   font-size: 25px;
-  text-shadow: 1px 2px 3px rgba(0,0,0,0.5);
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 .comment-text {
   color: white;
@@ -108,7 +108,7 @@ code {
   border: none;
   font-family: sans-serif;
   color: blue;
-  text-shadow: 0px 1px 1px rgba(0,0,0,0.8);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
 }
 .comment-delete-btn {
   font-size: 14px;
@@ -118,11 +118,11 @@ code {
   border: none;
   color: crimson;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
-  font-family:sans-serif;
+  font-family: sans-serif;
 }
 .comment-btn {
   margin-top: 8%;
-  background:rgb(250, 135, 135);
+  background: rgb(250, 135, 135);
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 .back-btn {
@@ -132,18 +132,13 @@ code {
   box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
-
-
-
 .see-more-btn {
   margin-top: 3%;
   color: black;
-  background:rgb(250, 135, 135);
+  background: rgb(250, 135, 135);
   border: 1px solid black;
-  box-shadow: 2px 3px 4px rgba(0,0,0,0.5);
+  box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
 }
-
-
 
 .comment-modal {
   margin-top: 15%;

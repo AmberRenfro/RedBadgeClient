@@ -144,6 +144,8 @@ class MiddleEastDisplay extends React.Component<
             </Button>
           </Col>
         );
+      } else {
+        return null;
       }
     });
   };

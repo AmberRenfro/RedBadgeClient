@@ -1,7 +1,6 @@
-import { KeyObject } from "crypto";
 import * as React from "react";
 import { Modal, ModalBody, Button } from "reactstrap";
-import { JsonObjectExpression } from "typescript";
+
 
 interface CommentsEditProps {
   sessionToken: string | null;
@@ -18,11 +17,6 @@ interface CommentJSON {
   id: number;
   comment: string;
   createdAt: string;
-}
-
-interface ResponseJSON {
-  status: number;
-  statusText: string;
 }
 
 class CommentsEdit extends React.Component<

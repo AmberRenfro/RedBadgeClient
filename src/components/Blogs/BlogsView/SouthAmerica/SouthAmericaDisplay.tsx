@@ -144,6 +144,8 @@ class SouthAmericaDisplay extends React.Component<
             </Button>
           </Col>
         );
+      } else {
+        return null;
       }
     });
   };

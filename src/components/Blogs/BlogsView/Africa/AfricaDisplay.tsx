@@ -143,6 +143,8 @@ class AfricaDisplay extends React.Component<
             </Button>
           </Col>
         );
+      } else {
+          return null
       }
     });
   };

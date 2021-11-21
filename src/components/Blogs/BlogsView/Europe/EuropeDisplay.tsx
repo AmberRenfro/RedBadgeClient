@@ -144,6 +144,8 @@ class EuropeDisplay extends React.Component<
             </Button>
           </Col>
         );
+      } else {
+        return null;
       }
     });
   };
