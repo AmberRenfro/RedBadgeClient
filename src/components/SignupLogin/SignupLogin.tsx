@@ -54,14 +54,24 @@ class signupLogin extends React.Component<
     this.handleLoginEmailChange = this.handleLoginEmailChange.bind(this);
     this.handleRegisterEmailChange = this.handleRegisterEmailChange.bind(this);
     this.handleLoginPasswordChange = this.handleLoginPasswordChange.bind(this);
-    this.handleRegisterPasswordChange =
-      this.handleRegisterPasswordChange.bind(this);
-    this.handleRegisterUsernameChange =
-      this.handleRegisterUsernameChange.bind(this);
+    this.handleRegisterPasswordChange = this.handleRegisterPasswordChange.bind(this);
+    this.handleRegisterUsernameChange = this.handleRegisterUsernameChange.bind(this);
   }
+
+  emailEx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  passwordEx = /^[A-Za-z_0-9_!@#$%^&* .]{5,30}$/ 
+
+  passAlert = () => {alert("Oops! password must contain at least 5 characters")}
+  mailAlert = () => {alert ("Oops! --> email format invalid --> Try Anything @ Anything . Anything")}
 
   handleRegisterSubmit = (event: React.SyntheticEvent): void => {
     event.preventDefault();
+    if (this.emailEx.test(this.state.registerEmail) !== true) {
+      return this.mailAlert();
+    }
+    if (this.passwordEx.test(this.state.registerPassword) !== true) {
+      return this.passAlert();
+    }
     fetch(`${APIURL}user/signup`, {
       method: "POST",
       body: JSON.stringify({
