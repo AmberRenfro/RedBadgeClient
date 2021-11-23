@@ -62,7 +62,7 @@ class signupLogin extends React.Component<
 
   handleRegisterSubmit = (event: React.SyntheticEvent): void => {
     event.preventDefault();
-    fetch(`http://localhost:3000/user/signup`, {
+    fetch(`${APIURL}user/signup`, {
       method: "POST",
       body: JSON.stringify({
         email: this.state.registerEmail,
