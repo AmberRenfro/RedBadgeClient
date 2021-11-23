@@ -69,10 +69,10 @@ class BlogCards extends React.Component<BlogCardsProps, BlogCardsState> {
             <div className="trinfo">
               <div className="tripn">Europe</div>
               <p>
-                She is my favorite person-- beautiful, funny, and smart. The
-                conversations we have make me thankful to have found such an
-                intelligent and interesting person to share my time with. I
-                wouldn't trade her for the world.{" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi aperiam facilis, omnis cum adipisci molestiae
+                laudantium. Laudantium vero enim deleniti eaque optio sint
+                cumque incidunt quia, sapiente explicabo a aliquam?
               </p>
               <ul>
                 <button>
@@ -93,10 +93,10 @@ class BlogCards extends React.Component<BlogCardsProps, BlogCardsState> {
             <div className="trinfo">
               <div className="tripn">Middle East</div>
               <p>
-                She is my favorite person-- beautiful, funny, and smart. The
-                conversations we have make me thankful to have found such an
-                intelligent and interesting person to share my time with. I
-                wouldn't trade her for the world.{" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi aperiam facilis, omnis cum adipisci molestiae
+                laudantium. Laudantium vero enim deleniti eaque optio sint
+                cumque incidunt quia, sapiente explicabo a aliquam?
               </p>
               <ul>
                 <button>
@@ -117,10 +117,10 @@ class BlogCards extends React.Component<BlogCardsProps, BlogCardsState> {
             <div className="trinfo">
               <div className="tripn">North America</div>
               <p>
-                She is my favorite person-- beautiful, funny, and smart. The
-                conversations we have make me thankful to have found such an
-                intelligent and interesting person to share my time with. I
-                wouldn't trade her for the world.{" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi aperiam facilis, omnis cum adipisci molestiae
+                laudantium. Laudantium vero enim deleniti eaque optio sint
+                cumque incidunt quia, sapiente explicabo a aliquam?
               </p>
               <ul>
                 <button>
@@ -141,10 +141,10 @@ class BlogCards extends React.Component<BlogCardsProps, BlogCardsState> {
             <div className="trinfo">
               <div className="tripn">South America</div>
               <p>
-                She is my favorite person-- beautiful, funny, and smart. The
-                conversations we have make me thankful to have found such an
-                intelligent and interesting person to share my time with. I
-                wouldn't trade her for the world.{" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eligendi aperiam facilis, omnis cum adipisci molestiae
+                laudantium. Laudantium vero enim deleniti eaque optio sint
+                cumque incidunt quia, sapiente explicabo a aliquam?
               </p>
               <ul>
                 <button>
