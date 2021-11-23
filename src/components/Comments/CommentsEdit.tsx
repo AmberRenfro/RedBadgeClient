@@ -1,4 +1,5 @@
 import * as React from "react";
+import APIURL from '../../helpers/environment'
 import { Modal, ModalBody, Button } from "reactstrap";
 
 
@@ -44,7 +45,7 @@ class CommentsEdit extends React.Component<
   editComment = (event: React.SyntheticEvent): void => {
     event.preventDefault();
     fetch(
-      `http://localhost:3000/comments/edit/${this.props.commentToEdit.id}`,
+      `${APIURL}comments/edit/${this.props.commentToEdit.id}`,
       {
         method: "PUT",
         body: JSON.stringify({

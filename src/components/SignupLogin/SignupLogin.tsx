@@ -1,4 +1,5 @@
 import * as React from "react";
+import APIURL from '../../helpers/environment';
 import "./signupLoginStyles.css";
 import { Redirect } from "react-router";
 
@@ -61,7 +62,7 @@ class signupLogin extends React.Component<
 
   handleRegisterSubmit = (event: React.SyntheticEvent): void => {
     event.preventDefault();
-    fetch("http://localhost:3000/user/signup", {
+    fetch(`http://localhost:3000/user/signup`, {
       method: "POST",
       body: JSON.stringify({
         email: this.state.registerEmail,
@@ -88,7 +89,7 @@ class signupLogin extends React.Component<
 
   handleLoginSubmit = (event: React.SyntheticEvent): void => {
     event.preventDefault();
-    fetch("http://localhost:3000/user/login", {
+    fetch(`${APIURL}user/login`, {
       method: "POST",
       body: JSON.stringify({
         email: this.state.loginEmail,

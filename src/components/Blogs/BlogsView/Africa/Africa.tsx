@@ -1,4 +1,5 @@
 import * as React from "react";
+import APIURL from '../../../../helpers/environment'
 import AfricaDisplay from "./AfricaDisplay";
 import CommentsCreate from "../../../Comments/CommentsCreate";
 import CommentsEdit from "../../../Comments/CommentsEdit";
@@ -63,7 +64,7 @@ class Africa extends React.Component<AfricaProps, AfricaState, BlogJSON> {
   }
 
   fetchBlogs = () => {
-    fetch(`http://localhost:3000/posts/`, {
+    fetch(`${APIURL}posts/`, {
       method: "GET",
       headers: new Headers({
         "Content-Type": "application/json",

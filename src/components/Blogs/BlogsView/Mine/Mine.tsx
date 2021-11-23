@@ -1,4 +1,5 @@
 import * as React from "react";
+import APIURL from '../../../../helpers/environment'
 import BlogsEdit from "../../BlogsCrud/BlogsEdit";
 import BlogsDisplay from "../../BlogsCrud/BlogsDisplay";
 import { Container } from "reactstrap";
@@ -43,7 +44,7 @@ class Mine extends React.Component<MineProps, MineState, BlogJSON> {
   }
 
   fetchBlogs = () => {
-    fetch(`http://localhost:3000/posts/mine`, {
+    fetch(`${APIURL}posts/mine`, {
       method: "GET",
       headers: new Headers({
         "Content-Type": "application/json",

@@ -1,4 +1,5 @@
 import * as React from "react";
+import APIURL from '../../../helpers/environment'
 import {
   Row,
   Col,
@@ -41,7 +42,7 @@ class BlogsDisplay extends React.Component<
   }
 
   deleteBlog = (blog: BlogJSON) => {
-    fetch(`http://localhost:3000/posts/delete/${blog.id}`, {
+    fetch(`${APIURL}posts/delete/${blog.id}`, {
       method: "DELETE",
       headers: new Headers({
         "Content-Type": "application/json",

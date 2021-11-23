@@ -1,4 +1,5 @@
 import * as React from "react";
+import APIURL from '../../../../helpers/environment'
 import CommentsCreate from "../../../Comments/CommentsCreate";
 import CommentsEdit from "../../../Comments/CommentsEdit";
 import EuropeDisplay from "./EuropeDisplay";
@@ -63,7 +64,7 @@ class Europe extends React.Component<EuropeProps, EuropeState> {
   }
 
   fetchBlogs = () => {
-    fetch(`http://localhost:3000/posts/`, {
+    fetch(`${APIURL}posts/`, {
       method: "GET",
       headers: new Headers({
         "Content-Type": "application/json",

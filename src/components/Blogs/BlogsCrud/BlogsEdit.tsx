@@ -1,4 +1,5 @@
 import * as React from "react";
+import APIURL from '../../../helpers/environment'
 import { Modal, ModalBody, Button } from "reactstrap";
 
 interface BlogsEditProps {
@@ -41,7 +42,7 @@ class BlogsEdit extends React.Component<
 
   blogUpdate = (event: React.SyntheticEvent): void => {
     event.preventDefault();
-    fetch(`http://localhost:3000/posts/edit/${this.props.blogToUpdate.id}`, {
+    fetch(`${APIURL}posts/edit/${this.props.blogToUpdate.id}`, {
       method: "PUT",
       body: JSON.stringify({
         entry: this.state.editEntry,

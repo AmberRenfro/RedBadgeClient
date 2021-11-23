@@ -1,4 +1,5 @@
 import * as React from "react";
+import APIURL from '../../../../helpers/environment'
 import {
   Row,
   Col,
@@ -95,7 +96,7 @@ class SouthAmericaDisplay extends React.Component<
   }
 
   fetchComments = () => {
-    fetch(`http://localhost:3000/comments/${this.state.blogId}`, {
+    fetch(`${APIURL}comments/${this.state.blogId}`, {
       method: "GET",
       headers: new Headers({
         "Content-Type": "application/json",
@@ -111,7 +112,7 @@ class SouthAmericaDisplay extends React.Component<
   };
 
   deleteComment = (comment: CommentJSON) => {
-    fetch(`http://localhost:3000/comments/delete/${comment.id}`, {
+    fetch(`${APIURL}comments/delete/${comment.id}`, {
       method: "DELETE",
       headers: new Headers({
         "Content-Type": "application/json",

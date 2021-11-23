@@ -1,4 +1,5 @@
 import * as React from "react";
+import APIURL from '../../../helpers/environment'
 import { Redirect } from "react-router-dom";
 import { Button } from "reactstrap";
 
@@ -29,7 +30,7 @@ class BlogsCreate extends React.Component<BlogsCreateProps, BlogsCreateState> {
 
   handleSubmit = (e: React.SyntheticEvent): void => {
     e.preventDefault();
-    fetch("http://localhost:3000/posts/create", {
+    fetch(`${APIURL}posts/create`, {
       method: "POST",
       body: JSON.stringify({
         destination: this.state.destination,

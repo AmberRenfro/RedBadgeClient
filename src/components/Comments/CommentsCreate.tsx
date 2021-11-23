@@ -1,4 +1,5 @@
 import * as React from "react";
+import APIURL from '../../helpers/environment'
 import { Modal, ModalBody, Button } from "reactstrap";
 
 interface CommentsCreateProps {
@@ -25,7 +26,7 @@ class CommentsCreate extends React.Component<
   }
 
   createComment = () => {
-    fetch(`http://localhost:3000/comments/create`, {
+    fetch(`${APIURL}comments/create`, {
       method: "POST",
       body: JSON.stringify({
         comment: this.state.comment,
