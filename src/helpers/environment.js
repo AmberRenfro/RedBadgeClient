@@ -10,7 +10,7 @@ switch (window.location.hostname) {
         break;
 
     default: 
-        APIURL = 'https://all-abroad-server-.herokuapp.com/';
+        APIURL = 'https://all-abroad-server.herokuapp.com/';
 }
 
 export default APIURL;
